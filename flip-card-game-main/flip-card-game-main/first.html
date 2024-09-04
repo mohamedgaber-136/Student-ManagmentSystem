@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FLIP CARD GAME</title>
+    <!-- jQuery 1.8 or later, 33 KB -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <!-- jQuery 1.8 or later, 33 KB -->
+    <link rel="stylesheet" href="sweetalert2.min.css">
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="css/all.min.css" />
+    <!-- bootstrap  -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!-- my style  -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="control-buttons">
+      <span>Start Game</span>
+    </div>
+
+    <div class="info_container">
+      <div class="name">Hello: <span></span></div>
+      <div class="timer">
+        <span>0</span>
+      </div>
+      <div class="errors">Wrong tries: <span>0</span></div>
+    </div>
+
+    <div class="game">
+      <!-- card 1 -->
+      <div class="card" dataGame="card1">
+        <div class="face front"></div>
+        <div class="face back">
+          <i class="fa-solid fa-house fa-10x text-info"></i>
+        </div>
+      </div>
+      <div class="card" dataGame="card1">
+        <div class="face front"></div>
+        <div class="face back">
+          <i class="fa-solid fa-house fa-10x text-info"></i>
+        </div>
+      </div>
+      <!-- card 2 -->
+      <div class="card" dataGame="card2">
+        <div class="face front"></div>
+        <div class="face back">
+          <i class="fa-brands fa-facebook fa-10x text-info"></i>
+        </div>
+      </div>
+      <div class="card" dataGame="card2">
+        <div class="face front"></div>
+        <div class="face back">
+          <i class="fa-brands fa-facebook fa-10x text-info"></i>
+        </div>
+      </div>
+      <!-- card 3 -->
+      <div class="card" dataGame="card3">
+        <div class="face front"></div>
+        <div class="face back">
+          <i class="fa-brands fa-twitter fa-10x text-info"></i>
+        </div>
+      </div>
+      <div class="card" dataGame="card3">
+        <div class="face front"></div>
+        <div class="face back">
+          <i class="fa-brands fa-twitter fa-10x text-info"></i>
+        </div>
+      </div>
+      <!-- card 4 -->
+      <div class="card" dataGame="card4">
+        <div class="face front"></div>
+        <div class="face back">
+          <i class="fa-solid fa-hashtag fa-10x text-info"></i>
+        </div>
+      </div>
+      <div class="card" dataGame="card4">
+        <div class="face front"></div>
+        <div class="face back">
+          <i class="fa-solid fa-hashtag fa-10x text-info"></i>
+        </div>
+      </div>
+      <!-- card 5 -->
+      <div class="card" dataGame="card5">
+        <div class="face front"></div>
+        <div class="face back">
+          <i class="fa-brands fa-youtube fa-10x text-info"></i>
+        </div>
+      </div>
+      <div class="card" dataGame="card5">
+        <div class="face front"></div>
+        <div class="face back">
+          <i class="fa-brands fa-youtube fa-10x text-info"></i>
+        </div>
+      </div>
+      <!-- card 6 -->
+      <div class="card" dataGame="card6">
+        <div class="face front"></div>
+        <div class="face back">
+          <i class="fa-brands fa-instagram fa-10x text-info"></i>
+        </div>
+      </div>
+      <div class="card" dataGame="card6">
+        <div class="face front"></div>
+        <div class="face back">
+          <i class="fa-brands fa-instagram fa-10x text-info"></i>
+        </div>
+      </div>
+      <!-- card 7 -->
+      <div class="card" dataGame="card7">
+        <div class="face front"></div>
+        <div class="face back">
+          <i class="fa-brands fa-linkedin fa-10x text-info"></i>
+        </div>
+      </div>
+      <div class="card" dataGame="card7">
+        <div class="face front"></div>
+        <div class="face back">
+          <i class="fa-brands fa-linkedin fa-10x text-info"></i>
+        </div>
+      </div>
+      <!-- card 8 -->
+      <div class="card" dataGame="card8">
+        <div class="face front"></div>
+        <div class="face back">
+          <i class="fa-brands fa-github fa-10x text-info"></i>
+        </div>
+      </div>
+      <div class="card" dataGame="card8">
+        <div class="face front"></div>
+        <div class="face back">
+          <i class="fa-brands fa-github fa-10x text-info"></i>
+        </div>
+      </div>
+      <!-- card 9 -->
+      <div class="card" dataGame="card9">
+        <div class="face front"></div>
+        <div class="face back">
+          <i class="fa-brands fa-apple fa-10x text-info"></i>
+        </div>
+      </div>
+      <div class="card" dataGame="card9">
+        <div class="face front"></div>
+        <div class="face back">
+          <i class="fa-brands fa-apple fa-10x text-info"></i>
+        </div>
+      </div>
+      <!-- card 10 -->
+      <div class="card" dataGame="card10">
+        <div class="face front"></div>
+        <div class="face back">
+          <i class="fa-brands fa-whatsapp fa-10x text-info"></i>
+        </div>
+      </div>
+      <div class="card" dataGame="card10">
+        <div class="face front"></div>
+        <div class="face back">
+          <i class="fa-brands fa-whatsapp fa-10x text-info"></i>
+        </div>
+      </div>
+    </div>   
+    <!-- <script src="sweetalert2.min.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/7.29.2/sweetalert2.all.js"></script>
+     <!-- <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script> -->
+    <script src="js/script.js"></script>
+   
+  </body>
+</html>
